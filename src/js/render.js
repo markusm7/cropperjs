@@ -444,15 +444,15 @@ export default {
   renderCropBox() {
     const { options, containerData, cropBoxData } = this;
 
-    if (cropBoxData.width > cropBoxData.maxWidth
-      || cropBoxData.width < cropBoxData.minWidth) {
-      cropBoxData.left = cropBoxData.oldLeft;
-    }
+    // if (cropBoxData.width > cropBoxData.maxWidth
+    //   || cropBoxData.width < cropBoxData.minWidth) {
+    //   cropBoxData.left = cropBoxData.oldLeft;
+    // }
 
-    if (cropBoxData.height > cropBoxData.maxHeight
-      || cropBoxData.height < cropBoxData.minHeight) {
-      cropBoxData.top = cropBoxData.oldTop;
-    }
+    // if (cropBoxData.height > cropBoxData.maxHeight
+    //   || cropBoxData.height < cropBoxData.minHeight) {
+    //   cropBoxData.top = cropBoxData.oldTop;
+    // }
 
     cropBoxData.width = Math.min(
       Math.max(cropBoxData.width, cropBoxData.minWidth),
